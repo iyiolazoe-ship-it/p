@@ -1,0 +1,40 @@
+print("--- Swimming Pool Entry Checker ---")
+print("Answer 3 questions and I will tell you which pool you can use.\n")
+
+age = int(input("How old are you? "))
+can_swim = input("Can you swim 25 metres? (yes / no): ").lower()
+adult_here = input("Is an adult with you? (yes / no): ").lower()
+
+print()
+print("--- Entry Decision ---")
+print("-" * 32)
+
+if age < 4:
+    print("Toddler : splash pool only, always with an adult")
+elif age < 12:
+    print("Child : main pool with an adult")
+elif age < 18:
+    print("Teen : main pool alone if you can swim")
+else:
+    print("Adult : all pools open to you")
+
+if can_swim != "yes" and can_swim != "no":
+    print("Input error: Please answer 'yes' or 'no' for swimming.")
+    swim_known = False
+else:
+    swim_known = True
+
+if adult_here != "yes" and adult_here != "no":
+    print("Input error: Please answer 'yes' or 'no' for adult attendance.")
+    adult_known = False
+else:
+    adult_known = True
+
+if can_swim == "yes" and adult_here == "yes":
+    print("Deep pool access: Allowed.")
+
+if age < 12 or can_swim == "no":
+    print("Warning: Shallow end recommended or required.")
+
+if adult_known and adult_here == "no":
+    print("Lifeguard reminder: No accompanying adult present.")

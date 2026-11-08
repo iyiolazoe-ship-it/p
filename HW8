@@ -1,0 +1,12 @@
+print("===== MY DAILY ROUTINE =====")
+
+print("07:00 AM - Wake up and have breakfast")
+print("09:00 AM - Attend classes and study")
+print("04:00 PM - Exercise and play sports")
+print("10:00 PM - Go to sleep")
+
+hours_per_day = 4
+days_in_week = 7
+weekly_hours = hours_per_day * days_in_week
+
+print(f"I spend {weekly_hours} hours studying every week.")

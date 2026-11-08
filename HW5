@@ -1,0 +1,10 @@
+prediction = "Person 1"
+
+if prediction == "Person 1":
+    print("Hello Person 1! Welcome back!")
+elif prediction == "Person 2":
+    print("Hi Person 2! Great to see you today!")
+elif prediction == "Person 3":
+    print("Welcome Person 3! Have a wonderful day!")
+else:
+    print("Hello! Pose not recognized.")

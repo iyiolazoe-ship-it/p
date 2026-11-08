@@ -1,0 +1,10 @@
+detected_color = "purple"
+
+if detected_color == "purple":
+    print("Butterfly turns purple!")
+elif detected_color == "blue":
+    print("Butterfly turns blue!")
+elif detected_color == "pink":
+    print("Butterfly turns pink!")
+else:
+    print("Color not recognized. Butterfly stays original color.")

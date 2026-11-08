@@ -1,0 +1,8 @@
+spoken_command = "museum"
+
+if spoken_command == "museum":
+    print("Navigating to the Museum.")
+elif spoken_command == "park":
+    print("Navigating to the Park.")
+else:
+    print("Command not recognized. Guide character is waiting.")
